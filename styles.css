@@ -1,0 +1,417 @@
+/* Fuente personalizada */
+@font-face {
+  font-family: "Erstoria";
+  src: url("fonts/Erstoria.woff2") format("woff2");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lavish";
+  src: url("fonts/Lavish.woff2") format("woff2"),
+    url("fonts/Lavish.woff") format(woff);
+  font-weight: normal;
+}
+
+/* General */
+body {
+  font-family: ;
+  background-color: #f9f9f3;
+  color: #0a0604;
+  line-height: 1.6;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal de bienvenida */
+.modal-bienvenida {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/photos/foto19.jpg");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  font-weight: bold;
+}
+
+.modal-bienvenida-body {
+  background-color: #f3f3f3;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.modal-intro-img img {
+  width: 300px;
+  /height: 300px;
+  object-fit: cover;
+  border-radius: 200px 200px 0 0;
+  border: 5px solid #f1efee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+}
+.modal-bienvenida p {
+  color: #0a0604;
+}
+
+/* Secciones internas del modal */
+.modal-lateral-nombres,
+.modal-lateral-fecha {
+  font-size: 40px;
+}
+
+#btn-ingresar {
+  width: 100px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #b98d7a;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  align-self: center;
+  text-align: center;
+  color: #f3f3f3;
+}
+
+#btn-ingresar:hover {
+  transform: scale(1.05);
+  background-color: #a47764;
+}
+
+#btn-ingresar img {
+  width: 200%;
+  height: auto;
+}
+
+/* Botón de música */
+.btn-musica {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #a47764;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Iconos de sonido */
+.icono-silencio,
+.icono-sonando {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+.icono-silencio {
+  background-image: url("assets/icons/silencio.png");
+}
+
+.icono-sonando {
+  background-image: url("assets/icons/sonido.png");
+}
+
+/* Botones generales */
+button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #b98d7a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #a47764;
+}
+
+/* Encabezado */
+header.inicio {
+  text-align: center;
+  margin-bottom: 20px;
+  position: sticky;
+}
+
+header.inicio h1 {
+  font-size: 3em;
+  color: #a47764;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Lavish", fantasy;
+}
+
+/* Foto animada */
+.foto img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 1s ease;
+}
+
+/* Secciones */
+section {
+  margin: 80px 0;
+  animation: fadeInUp 1s ease;
+  color: #0a0604;
+  text-align: center;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4 {
+  color: #a47864;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+h5 {
+  color: #0a0604;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+}
+
+p {
+  color: #0a0604;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Frase especial */
+.blockquote {
+  text-align: justify;
+  padding: 80px;
+  border-radius: 8px;
+  color: #0a0604;
+}
+
+/* Cuenta regresiva */
+.Fecha p {
+  color: #a47764;
+  font-size: 50px;
+}
+.cuenta-regresiva {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 80px;
+  color: #a47764;
+  flex-wrap: wrap;
+}
+
+.cuenta-regresiva div {
+  background-color: #a47764;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 70px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Sección con nombres */
+.Nombres {
+  font-family: "Lavish", cursive;
+  font-weight: bold;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+  color: white;
+  text-shadow: 1px 1px 4px rgb(255, 255, 255);
+  z-index: 1;
+  text-align: center;
+  font-size: 50px;
+}
+.Nombres P {
+  color: #a47764;
+}
+.Nombres::before {
+  content: "";
+  background-image: url("assets/photos/foto9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+  z-index: -1;
+  filter: brightness(40%);
+}
+
+/* Confirmación */
+.Confirmacion form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.Confirmacion input,
+.Confirmacion textarea {
+  padding: 12px;
+  border: 1px solid #a47764;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.Confirmacion textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.Confirmacion button {
+  background-color: #b98d7a;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.Confirmacion button:hover {
+  background-color: #a47764;
+}
+
+/* Luagres */
+.container img {
+  width: 50%;
+  max-width: 100px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Mesa de regalos */
+.mesaregalos ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.mesaregalos li {
+  margin-bottom: 15px;
+}
+/* Hoteles */
+
+.hoteles img {
+  width: 50%;
+  max-width: 100px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+}
+/* Carousel */
+.carousel {
+  width: 3000 px;
+  height: auto;
+  align-content: normal;
+}
+.carousel img {
+  border-radius: 50px;
+}
+
+/* Linea Tiempo */
+
+.timeline-section {
+  text-align: center;
+  background-color: #f9f9f3;
+  padding: 50px 20px;
+  max-width: 1500px;
+  margin: 50px auto;
+  border-radius: 16px;
+}
+
+.date {
+  font-weight: normal;
+  font-size: 1rem;
+  color: #a47864;
+}
+
+h6 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 40px;
+  color: #a47864;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #a47864;
+  z-index: 0;
+}
+
+.event {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100px;
+  margin: 0 10px;
+}
+
+.event img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.time {
+  font-size: 30px;
+  margin: 5px 0;
+  color: #a47864;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 25px;
+  color: #a47864;
+}
+
+/* Boton temas*/

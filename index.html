@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Boda</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="assets/icons/sello.png" type="image/png" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body>
+    <!-- Intro -->
+    <div class="modal-bienvenida">
+      <div class="modal-bienvenida-body">
+        <div class="modal-lateral-nombres">
+          Karina Delgado &amp; Gerardo Lopez
+        </div>
+        <div class="modal-lateral-fecha">01 Noviembre, 2025</div>
+        <div class="modal-intro-img">
+          <img src="assets/photos/foto1.jpg" alt="Foto de los novios" />
+        </div>
+        <p>Tenemos el placer de invitarlos a nuestra boda</p>
+        <button type="button" id="btn-ingresar" onclick="cerrarModalWelcome()">
+          Ingresar
+        </button>
+      </div>
+    </div>
+
+    <!-- Musica -->
+    <button class="btn-musica">
+      <div class="icono-silencio"></div>
+    </button>
+
+    <audio id="musica" loop>
+      <source src="assets/audio.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- 1. Encabezado -->
+    <header class="inicio">
+      <div class="Front my-5">
+        <h1>Karina & Gerardo</h1>
+      </div>
+    </header>
+
+
+    <!-- 2. Foto -->
+    <section class="foto">
+      <img src="assets/photos/foto1.jpg" alt="Foto de los novios" />
+    </section>
+
+    <!-- 3. Frase -->
+    <section class="Intro">
+      <blockquote class="blockquote">
+        <p>
+          "Nuestra historia ha sobrevivido a los días, los años, las pruebas y la distancia, 
+          por eso cuando estamos lejos nos buscamos en cada elemento de la naturaleza; 
+          en el agua que nos recuerda cómo nos tranquiliza la mano del otro, 
+          en el aire que nos da vitalidad, en la tierra por que donde estemos nos llevamos en el corazón. 
+          Hoy por fin uniremos nuestras vidas en matrimonio,
+          sellamos nuestras promesas con el elemento que distingue nuestra amor,
+          el fuego, ese que ha mantenido viva la intensidad y 
+          la luz que nos dirige al futuro compartido en el que queremos vivir.  
+          Por eso nos encantaría que nos acompañarán en este día tan especial."
+        </p>
+      </blockquote>
+
+    <!-- 3. Cuenta Regresiva -->
+    <section class="Fecha">
+      <p><strong>01 de Noviembre de 2025</strong></p>
+      <p>Faltan:</p>
+      <div id="cuenta-regresiva" class="cuenta-regresiva"></div>
+    </section>
+
+    <!-- 4. Nombres -->
+    <section class="Nombres">
+      <p> Karina Lizeth Delgado Benitez<br>y<br>Gerardo Lopez Arroyo</p>
+    </section>
+
+    <!-- 5. Lugares -->
+    <section class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 my-5">
+          <h3>Ceremonia Religiosa</h3>
+          <img src="assets/icons/iglesia.png" alt="Iglesia" class="img-fluid" />
+          <p>Parroquia Santa María de Guadalupe<br>16:30 hr</p>
+          <a href="https://maps.app.goo.gl/yaqaGNKWtBXKPh6aA" target="_blank">
+            <button type="button">
+              Cómo llegar
+            </button>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 my-5">
+          <h3>Recepción / Evento</h3>
+          <img src="assets/icons/mansion.png" alt="Evento" class="img-fluid" />
+          <p> Los Agaves Eventos<br>19:00 hrs</p>
+          <a href="https://maps.app.goo.gl/ugybqq1hNqykeFQJ8" target="_blank">
+            <button type="button">
+              Cómo llegar
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Cronología -->
+ 
+    <section class="timeline-section">
+      
+      <h3>wedding timeline</h3>
+      <div class="timeline">
+        <div class="event">
+          <img src="assets/icons/iglesia.png" alt="Iglesia">
+          <p class="time">16.30</p>
+          <p class="label">Ceremonia</p>
+        </div>
+        <div class="event">
+          <img src="assets/icons/mansion.png" alt="Recepción">
+          <p class="time">19.00</p>
+          <p class="label">Recepción</p>
+        </div>
+        <div class="event">
+          <img src="assets/icons/copa-de-champan.png" alt="Coctel">
+          <p class="time">19.30</p>
+          <p class="label">Cóctel</p>
+        </div>
+        <div class="event">
+          <img src="assets/icons/comida.png" alt="Cena">
+          <p class="time">20.00</p>
+          <p class="label">Cena</p>
+        </div>
+        <div class="event">
+          <img src="assets/icons/disco.png" alt="baile">
+          <p class="time">21.30</p>
+          <p class="label">Baile</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Confirmación -->
+    <section class="Confirmacion">
+      <h2>Confirma tu Asistencia</h2>
+      <form
+        action="mailto:kari_correo@correo.com"
+        method="POST"
+        enctype="text/plain"
+      >
+        <label for="nombre">Tu nombre</label>
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          placeholder="Tu nombre"
+          required
+        />
+
+        <label for="mensaje">Comentarios o número de acompañantes</label>
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          placeholder="Comentarios o número de acompañantes"
+          required
+        ></textarea>
+        <button type="submit" class="btn btn-primary">
+          Enviar Confirmación
+        </button>
+      </form>
+    </section>
+
+    <!-- 9. Mesa de Regalos -->
+    <section class="mesaregalos">
+      <h3>Hemos habilitado mesas de regalos en:</h3>
+      <div class="row">
+        <div class="col-12 col-md-6 my-5">
+         
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://www.amazon.com.mx/registries/custom"
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/amazon.jpg"
+                  alt="Logo de Amazon"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 my-5">
+          
+          <ul>
+            <li>
+              <a href="https://www.liverpool.com.mx/tienda" target="_blank">
+                <img
+                  src="assets/icons/liverpool.png"
+                  alt="Liverpool"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Hoteles -->
+    <section class="hoteles">
+      <h4>Sugerencias de Hospedaje </h4>
+
+      <div class="row">
+        <div class="col-12 col-md-4 my-5">
+          <h5> Hotel encore</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://encoreguadalajara.com/?gad_source=1&gbraid=0AAAAAC-2TvenUR_Syb5zK3DX2zKo0lB0M "
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/hotel.png"
+                  alt="Logo de Amazon"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+        <div class="col-12 col-md-4 my-5">
+          <h5> Micro Hotel</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://microtelgdlsur.com/?gad_source=1&gbraid=0AAAAAoXMilpX_2fWL2NDr_aUNrwghb2HQ "
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/hotel.png"
+                  alt="Logo de Amazon"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 my-5">
+          <h5>City Express </h5>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="https://www.marriott.com/es/hotels/gdljp-city-express-junior-guadalajara-periferico-sur/overview/?nst=paid&hmGUID=d76c9f58-5501-435a-ab41-d8bc3e42ede8"
+                target="_blank"
+              >
+                <img
+                  src="assets/icons/hotel.png"
+                  alt="Logo de Amazon"
+                  class="img-fluid"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- 11. Fotos  -->
+    <section class="carousel">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/photos/foto2.jpg" class="d-block w-100" alt="foto2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto3.jpg" class="d-block w-100" alt="foto3">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto4.jpg" class="d-block w-100" alt="foto4">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto5.jpg" class="d-block w-100" alt="foto5">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto6.jpg" class="d-block w-100" alt="foto6">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto7.jpg" class="d-block w-100" alt="foto7">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto8.jpg" class="d-block w-100" alt="foto8">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto10.jpg" class="d-block w-100" alt="foto10">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto11.jpg" class="d-block w-100" alt="foto11">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto12.jpg" class="d-block w-100" alt="foto12">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/photos/foto13.jpg" class="d-block w-100" alt="foto13">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
