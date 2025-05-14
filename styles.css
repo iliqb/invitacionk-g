@@ -4,18 +4,12 @@
   src: url("fonts/Erstoria.woff2") format("woff2");
   font-weight: normal;
 }
-@font-face {
-  font-family: "Lavish";
-  src: url("fonts/Lavish.woff2") format("woff2"),
-    url("fonts/Lavish.woff") format(woff);
-  font-weight: normal;
-}
 
 /* General */
 body {
   font-family: "Montserrat";
   background-color: #f9f9f3;
-  color: #0a0604;
+  color: #b98d7a;
   line-height: 1.6;
   padding: 20px;
   justify-content: center;
@@ -30,13 +24,12 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url("assets/photos/foto19.jpg");
+  background-image: url("assets/photos/backgrond3.jpg");
   background-size: cover;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
   font-weight: bold;
-  line-height: 50px;
 }
 
 .modal-bienvenida-body {
@@ -44,7 +37,7 @@ body {
   background-size: cover;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -62,10 +55,11 @@ body {
 }
 .modal-bienvenida h1 {
   font-family: "Dancing Script", cursive;
+  line-height: 50px;
   font-size: 55px;
 }
 .modal-bienvenida p {
-  color: #0a0604;
+  color: #b98d7a;
 }
 
 /* Secciones internas del modal */
@@ -154,6 +148,11 @@ header.inicio {
   text-align: center;
   margin-bottom: 20px;
   position: sticky;
+  top: 0;
+  background-color: #f9f9f3;
+  padding: 1rem;
+  width: 100%;
+  z-index: 1000;
 }
 
 header.inicio h1 {
@@ -161,7 +160,7 @@ header.inicio h1 {
   color: #a47764;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: "Lavish", fantasy;
+  font-family: "Erstoria";
 }
 
 /* Foto animada */
@@ -178,7 +177,7 @@ header.inicio h1 {
 section {
   margin: 80px 0;
   animation: fadeInUp 1s ease;
-  color: #0a0604;
+  color: #b98d7a;
   text-align: center;
 }
 
@@ -195,7 +194,7 @@ h4 {
   font-size: 40px;
 }
 h5 {
-  color: #0a0604;
+  color: #b98d7a;
   margin-bottom: 20px;
   font-weight: bold;
   text-align: center;
@@ -203,7 +202,7 @@ h5 {
 }
 
 p {
-  color: #0a0604;
+  color: #b98d7a;
   font-size: 1.6em;
   margin-bottom: 10px;
   text-align: center;
@@ -212,15 +211,18 @@ p {
 /* Frase especial */
 .blockquote {
   text-align: justify;
-  padding: 80px;
+  padding: 30px;
   border-radius: 8px;
-  color: #0a0604;
+  color: #ffffff;
+}
+.blockquote p {
 }
 
 /* Cuenta regresiva */
 .Fecha p {
   color: #a47764;
   font-size: 50px;
+  line-height: 1.8;
 }
 .cuenta-regresiva {
   display: flex;
@@ -243,20 +245,21 @@ p {
 /* Sección con nombres */
 .Nombres {
   font-family: "Dancing Script", cursive;
+  font-size: 80px;
   font-weight: bold;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 60px 20px;
-  color: white;
+  padding: 50px 20px;
   text-shadow: 1px 1px 4px rgb(255, 255, 255);
   z-index: 1;
   text-align: center;
   font-size: 50px;
 }
 .Nombres P {
+  font-size: 130px;
   color: #f3f0ee;
 }
 .Nombres::before {
@@ -271,6 +274,7 @@ p {
   bottom: 0;
   right: 0;
   z-index: -1;
+  border-radius: 8%;
 }
 
 /* Confirmación */
@@ -367,12 +371,12 @@ p {
 }
 
 h6 {
-  font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 40px;
+  font-family: "Erstoria";
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 100px;
   color: #a47864;
-  text-transform: lowercase;
-  letter-spacing: 2px;
 }
 
 .timeline {
@@ -391,6 +395,15 @@ h6 {
   height: 2px;
   background: #a47864;
   z-index: 0;
+  animation: moveline 20s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
 }
 
 .event {
@@ -403,7 +416,7 @@ h6 {
 
 .event img {
   width: 70px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .time {
