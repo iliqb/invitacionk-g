@@ -314,6 +314,7 @@ p {
 }
 
 /* Mesa de regalos */
+
 .mesaregalos ul {
   list-style: none;
   padding: 0;
@@ -422,3 +423,11 @@ h6 {
 }
 
 /* Boton temas*/
+
+/* wishlist images */
+
+img.wishlist{
+	border-radius: 8px;
+	width: 50% !important;
+	height: auto !important;
+}

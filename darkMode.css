@@ -233,10 +233,8 @@ body.dark-mode .icono-sonando {
   filter: invert(1) brightness(1.5);
 }
 
-body.dark-mode img.liverpool {
-  filter: grayscale(50%) contrast(110%) brightness(0.9);
-  opacity: 0.9;
-  transition: filter 0.3s ease;
+body.dark-mode img.wishlist {
+  filter: brightness(0) invert(1) sepia(0) saturate(10000%);
 }
 
 body.dark-mode .bg-light {
