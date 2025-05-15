@@ -80,6 +80,7 @@ body.dark-mode .foto {
 
 body.dark-mode .inicio {
   background-color: #121212;
+  opacity: 0.8;
 }
 
 /* === Sección de Frase (Intro) === */
@@ -114,9 +115,6 @@ body.dark-mode h3 {
   color: #ffffff;
 }
 
-
-
-/* === Timeline (Cronología) === */
 /* === Timeline (Cronología) === */
 body.dark-mode .timeline-section {
   background-color: #121212;
@@ -178,6 +176,17 @@ body.dark-mode .hoteles h5 {
 /* === Carousel (Fotos) === */
 body.dark-mode .carousel {
   background-color: #121212;
+}
+
+body.dark-mode .carousel-control-prev,
+body.dark-mode .carousel-control-next {
+  background-color: transparent;
+}
+
+body.dark-mode .carousel-control-prev:hover,
+body.dark-mode .carousel-control-next:hover {
+  background-color: #ffffff;
+  opacity: 0.5;
 }
 
 /* === Modal de Bienvenida === */
