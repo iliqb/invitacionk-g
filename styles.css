@@ -34,9 +34,9 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 2000;
-  font-family: "Monserrat";
-  color: #b98d7a;
-  font-style: bold;
+  font-family: "Montserrat";
+  color: #a47764;
+  letter-spacing: 3px;
 }
 
 .modal-bienvenida-body {
@@ -68,9 +68,9 @@ body {
   color: #a47764;
 }
 .modal-bienvenida p {
-  font-family: "Monserrat";
-  color: #b98d7a;
-  font-style: bold;
+  font-family: "Montserrat";
+  color: #a47764;
+  font-weight: bold;
 }
 
 /* Secciones internas del modal */
@@ -78,7 +78,9 @@ body {
   font-size: 40px;
 }
 .modal-lateral-fecha {
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 #btn-ingresar {
@@ -96,7 +98,8 @@ body {
   align-self: center;
   text-align: center;
   color: #f3f3f3;
-  font-style: bold;
+  font-weight: bold;
+  font-family: "Montserrat";
 }
 
 #btn-ingresar:hover {
@@ -226,17 +229,31 @@ p {
 
 /* Frase especial */
 .blockquote {
+  font-family: "Montserrat";
+  font-style: italic;
   text-align: justify;
   padding: 30px;
   border-radius: 8px;
-  color: #ffffff;
+  color: #a47764;
+  line-height: 40px;
 }
 
 /* Cuenta regresiva */
 .Fecha p {
+  color: #f9f9f3;
+  background-color: #a47764;
+  font-size: 30px;
+  line-height: 1.8;
+  display: inline-block;
+  padding: 0 10px;
+}
+#p1 {
   color: #a47764;
   font-size: 50px;
   line-height: 1.8;
+  background-color: #f9f9f3;
+  font-weight: bold;
+  font-size: 30px;
 }
 .cuenta-regresiva {
   display: flex;
@@ -351,12 +368,7 @@ p {
   max-width: 1500px;
   margin: 50px auto;
   border-radius: 16px;
-}
-
-.date {
-  font-weight: normal;
-  font-size: 1rem;
-  color: #a47864;
+  font-weight: bold;
 }
 
 h6 {
@@ -412,12 +424,15 @@ h6 {
   font-size: 30px;
   margin: 5px 0;
   color: #a47864;
+  font-weight: normal;
 }
 
 .label {
   font-weight: bold;
   font-size: 25px;
   color: #a47864;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 /* Boton temas*/
