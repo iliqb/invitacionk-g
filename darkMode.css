@@ -80,6 +80,7 @@ body.dark-mode .foto {
 
 body.dark-mode .inicio {
   background-color: #121212;
+  opacity: 0.8;
 }
 
 /* === Sección de Frase (Intro) === */
@@ -114,9 +115,6 @@ body.dark-mode h3 {
   color: #ffffff;
 }
 
-
-
-/* === Timeline (Cronología) === */
 /* === Timeline (Cronología) === */
 body.dark-mode .timeline-section {
   background-color: #121212;
@@ -180,6 +178,17 @@ body.dark-mode .carousel {
   background-color: #121212;
 }
 
+body.dark-mode .carousel-control-prev,
+body.dark-mode .carousel-control-next {
+  background-color: transparent;
+}
+
+body.dark-mode .carousel-control-prev:hover,
+body.dark-mode .carousel-control-next:hover {
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
 /* === Modal de Bienvenida === */
 body.dark-mode .modal-bienvenida {
   background-color: rgba(0, 0, 0, 0.9);
@@ -224,10 +233,8 @@ body.dark-mode .icono-sonando {
   filter: invert(1) brightness(1.5);
 }
 
-body.dark-mode img.liverpool {
-  filter: grayscale(50%) contrast(110%) brightness(0.9);
-  opacity: 0.9;
-  transition: filter 0.3s ease;
+body.dark-mode img.wishlist {
+  filter: brightness(0) invert(1) sepia(0) saturate(10000%);
 }
 
 body.dark-mode .bg-light {
