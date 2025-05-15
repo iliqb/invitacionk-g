@@ -75,22 +75,22 @@ body.dark-mode .inicio h1 {
 
 /* === Sección de Foto === */
 body.dark-mode .foto {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .inicio {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 /* === Sección de Frase (Intro) === */
 body.dark-mode .Intro blockquote {
-  background-color: #1e1e1e;
+  background-color: #121212;
   color: #ffffff;
 }
 
 /* === Sección de Fecha (Cuenta Regresiva) === */
 body.dark-mode .Fecha {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .Fecha p,
@@ -100,13 +100,13 @@ body.dark-mode .Fecha strong {
 
 /* === Sección de Nombres === */
 body.dark-mode .Nombres {
-  background-color: #1e1e1e;
+  background-color: #121212;
   color: #ffffff;
 }
 
 /* === Sección de Lugares (Ceremonia/Recepción) === */
 body.dark-mode .container {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode h1, 
@@ -119,7 +119,7 @@ body.dark-mode h3 {
 /* === Timeline (Cronología) === */
 /* === Timeline (Cronología) === */
 body.dark-mode .timeline-section {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .timeline::before {
@@ -136,7 +136,7 @@ body.dark-mode .event .label {
 
 /* === Confirmación de Asistencia === */
 body.dark-mode .Confirmacion {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .Confirmacion h2,
@@ -158,7 +158,7 @@ body.dark-mode .Confirmacion button {
 
 /* === Mesa de Regalos === */
 body.dark-mode .mesaregalos {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .mesaregalos h3 {
@@ -167,7 +167,7 @@ body.dark-mode .mesaregalos h3 {
 
 /* === Hoteles === */
 body.dark-mode .hoteles {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .hoteles h4,
@@ -177,7 +177,7 @@ body.dark-mode .hoteles h5 {
 
 /* === Carousel (Fotos) === */
 body.dark-mode .carousel {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 /* === Modal de Bienvenida === */
@@ -186,7 +186,7 @@ body.dark-mode .modal-bienvenida {
 }
 
 body.dark-mode .modal-bienvenida-body {
-  background-color: #1e1e1e;
+  background-color: #121212;
 }
 
 body.dark-mode .modal-lateral-nombres,
@@ -231,13 +231,13 @@ body.dark-mode img.liverpool {
 }
 
 body.dark-mode .bg-light {
-  background-color: #1e1e1e !important;
+  background-color: #121212 !important;
 }
 
 /* === Cuenta Regresiva === */
 body.dark-mode #cuenta-regresiva {
   color: #ffffff;
-  background-color: #1e1e1e; /* Opcional: si tiene fondo */
+  background-color: #121212; /* Opcional: si tiene fondo */
 }
 
 /* === Nombres de los novios === */
