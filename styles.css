@@ -412,8 +412,11 @@ h6 {
 .event {
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  width: 100px;
+  width: 120px;
   margin: 0 10px;
 }
 
@@ -441,8 +444,8 @@ h6 {
 
 /* wishlist images */
 
-img.wishlist{
-	border-radius: 8px;
-	width: 50% !important;
-	height: auto !important;
+img.wishlist {
+  border-radius: 8px;
+  width: 50% !important;
+  height: auto !important;
 }
