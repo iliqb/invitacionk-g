@@ -18,15 +18,17 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="darkMode.css" />
 
   </head>
 
   <body>
+	
     <!-- Intro -->
     <div class="modal-bienvenida">
       <div class="modal-bienvenida-body">
         <div class="modal-lateral-nombres">
-         <h1> Karina Delgado &amp; Gerardo Lopez </h1>
+         <h1> Karina Delgado &amp; Gerardo López </h1>
         </div>
         <div class="modal-lateral-fecha">01 Noviembre, 2025</div>
         <div class="modal-intro-img">
@@ -38,12 +40,22 @@
         </button>
       </div>
     </div>
+	
+	<div class="fixed-panel">
+		<!-- Dark Mode -->
+		<button id="darkModeToggle" class="toggle-btn" aria-label="Toggle dark mode">
+			<span class="toggle-thumb"></span>
+			<span class="icons">
+				<span class="moon">🌙</span>
+				<span class="sun">☀️</span>
+			</span>
+		</button>
 
-    <!-- Musica -->
-    <button class="btn-musica">
-      <div class="icono-silencio"></div>
-    </button>
-
+		<!-- Musica -->
+		<button class="btn-musica">
+		  <div class="icono-silencio"></div>
+		</button>
+	</div>
     <audio id="musica" loop>
       <source src="assets/audio.mp3" type="audio/mpeg" />
     </audio>
@@ -82,7 +94,7 @@
 
     <!-- 4. Nombres -->
     <section class="Nombres">
-      <p> Karina Lizeth Delgado Benitez<br>y<br>Gerardo Lopez Arroyo</p>
+      <p> Karina Lizeth Delgado Benítez<br>y<br>Gerardo López Arroyo</p>
     </section>
 
     <!-- 5. Lugares -->
@@ -204,7 +216,7 @@
                 <img
                   src="assets/icons/liverpool.png"
                   alt="Liverpool"
-                  class="img-fluid"
+                  class="img-fluid liverpool"
                 />
               </a>
             </li>
@@ -327,5 +339,6 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+	<script src="darkMode.js"></script>
   </body>
 </html>

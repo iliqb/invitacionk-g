@@ -1,0 +1,257 @@
+.toggle-btn {
+  position: relative;
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background: #e0e0e0;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.3s ease;
+}
+
+.toggle-btn.dark {
+  background: #333;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.toggle-btn.dark .toggle-thumb {
+  transform: translateX(30px);
+  background: #222;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+.moon, .sun {
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.toggle-btn .moon {
+  opacity: 0;
+}
+
+.toggle-btn.dark .moon {
+  opacity: 1;
+}
+
+.toggle-btn.dark .sun {
+  opacity: 0;
+}
+
+
+/* === Estilos generales para modo oscuro === */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff !important; /* Fuerza texto blanco en todo el body */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* === Encabezado === */
+body.dark-mode .inicio h1 {
+  color: #ffffff;
+}
+
+/* === Sección de Foto === */
+body.dark-mode .foto {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .inicio {
+  background-color: #1e1e1e;
+}
+
+/* === Sección de Frase (Intro) === */
+body.dark-mode .Intro blockquote {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-left: 3px solid #bb86fc;
+}
+
+/* === Sección de Fecha (Cuenta Regresiva) === */
+body.dark-mode .Fecha {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .Fecha p,
+body.dark-mode .Fecha strong {
+  color: #ffffff;
+}
+
+/* === Sección de Nombres === */
+body.dark-mode .Nombres {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* === Sección de Lugares (Ceremonia/Recepción) === */
+body.dark-mode .container {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode h1, 
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
+
+
+/* === Timeline (Cronología) === */
+/* === Timeline (Cronología) === */
+body.dark-mode .timeline-section {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .timeline::before {
+  background: #ffffff !important; /* Línea central blanca */
+  animation: moveline 20s linear forwards;
+}
+
+body.dark-mode .timeline-section h3,
+body.dark-mode .timeline-section h6,
+body.dark-mode .event .time,
+body.dark-mode .event .label {
+  color: #ffffff;
+}
+
+/* === Confirmación de Asistencia === */
+body.dark-mode .Confirmacion {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .Confirmacion h2,
+body.dark-mode .Confirmacion label {
+  color: #ffffff;
+}
+
+body.dark-mode .Confirmacion input,
+body.dark-mode .Confirmacion textarea {
+  background-color: #333;
+  color: #ffffff;
+  border: 1px solid #555;
+}
+
+body.dark-mode .Confirmacion button {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* === Mesa de Regalos === */
+body.dark-mode .mesaregalos {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .mesaregalos h3 {
+  color: #ffffff;
+}
+
+/* === Hoteles === */
+body.dark-mode .hoteles {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .hoteles h4,
+body.dark-mode .hoteles h5 {
+  color: #ffffff;
+}
+
+/* === Carousel (Fotos) === */
+body.dark-mode .carousel {
+  background-color: #1e1e1e;
+}
+
+/* === Modal de Bienvenida === */
+body.dark-mode .modal-bienvenida {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+body.dark-mode .modal-bienvenida-body {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .modal-lateral-nombres,
+body.dark-mode .modal-lateral-fecha,
+body.dark-mode .modal-bienvenida p {
+  color: #ffffff;
+}
+
+body.dark-mode #btn-ingresar {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.dark-mode button {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* === Botones Flotantes (Música + Dark Mode) === */
+body.dark-mode .btn-musica {
+  background-color: #333;
+}
+
+body.dark-mode .toggle-btn {
+  background-color: #333;
+}
+
+body.dark-mode .toggle-btn.dark {
+  background-color: #555;
+}
+
+body.dark-mode img[src*="icons/"],
+body.dark-mode .icono-silencio,
+body.dark-mode .icono-sonando {
+  filter: invert(1) brightness(1.5);
+}
+
+body.dark-mode img.liverpool {
+  filter: grayscale(50%) contrast(110%) brightness(0.9);
+  opacity: 0.9;
+  transition: filter 0.3s ease;
+}
+
+body.dark-mode .bg-light {
+  background-color: #1e1e1e !important;
+}
+
+/* === Cuenta Regresiva === */
+body.dark-mode #cuenta-regresiva {
+  color: #ffffff;
+  background-color: #1e1e1e; /* Opcional: si tiene fondo */
+}
+
+/* === Nombres de los novios === */
+body.dark-mode .Nombres p {
+  color: #ffffff;
+}
+
+/* === Frase romántica (Intro) === */
+body.dark-mode .Intro p {
+  color: #ffffff;
+}
+
+/* === Ajustes adicionales para el bloque de cita (opcional) === */
+body.dark-mode .Intro blockquote p {
+  color: #ffffff !important; /* Fuerza el color si hay herencias */
+}

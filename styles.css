@@ -95,11 +95,14 @@ body {
   height: auto;
 }
 
-/* Botón de música */
-.btn-musica {
+.fixed-panel {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+/* Botón de música */
+.btn-musica {
   background-color: #a47764;
   border-radius: 50%;
   width: 60px;
