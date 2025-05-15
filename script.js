@@ -100,3 +100,27 @@ const observer = new IntersectionObserver(
 document.querySelectorAll(".event").forEach((event) => {
   observer.observe(event);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const header = document.querySelector('header.inicio');
+  const carousel = document.querySelector('.carousel');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Cuando el carrusel es visible
+        header.style.opacity = '0';
+        header.style.visibility = 'hidden';
+        header.style.transition = 'opacity 0.5s ease, visibility 0.5s ease';
+      } else {
+        // Cuando el carrusel no es visible
+        header.style.opacity = '.8';
+        header.style.visibility = 'visible';
+      }
+    });
+  }, {
+    threshold: 0.1 // Activa cuando el 10% del carrusel es visible
+  });
+
+  observer.observe(carousel);
+});
