@@ -86,7 +86,6 @@ body.dark-mode .inicio {
 body.dark-mode .Intro blockquote {
   background-color: #1e1e1e;
   color: #ffffff;
-  border-left: 3px solid #bb86fc;
 }
 
 /* === Sección de Fecha (Cuenta Regresiva) === */
