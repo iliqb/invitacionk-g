@@ -103,7 +103,7 @@ document.querySelectorAll(".event").forEach((event) => {
 
 document.addEventListener('DOMContentLoaded', function() {
   const header = document.querySelector('header.inicio');
-  const carousel = document.querySelector('.carousel');
+  const noHeader = document.querySelector('.no-header');
   
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -122,5 +122,17 @@ document.addEventListener('DOMContentLoaded', function() {
     threshold: 0.1 // Activa cuando el 10% del carrusel es visible
   });
 
-  observer.observe(carousel);
+  observer.observe(noHeader);
 });
+
+// Al cargar la página
+window.onload = function() {
+  // Vuelve al top inmediatamente
+  window.scrollTo(0, 0);
+  
+  // Opcional: Suavizado para navegadores modernos
+  window.scrollTo({
+    top: 0,
+    behavior: 'auto' // 'smooth' para animación (quita el auto si quieres efecto)
+  });
+};
