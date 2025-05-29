@@ -83,6 +83,29 @@ function cerrarModalWelcome() {
   if (modal) modal.style.display = "none";
 }
 
+function copyInfo() {
+    const textoACopiar = "012320015636927951";
+    
+    navigator.clipboard.writeText(textoACopiar)
+      .then(() => mostrarNotificacion("Cuenta copiada al portapapeles:\nBBVA | Karina Lizeth Delgado Benítez — 012320015636927951"))
+      .catch(err => console.error("Error al copiar al portapapeles: ", err));
+  }
+
+  function mostrarNotificacion(mensaje) {
+    const notif = document.getElementById("notificacion");
+    notif.textContent = mensaje;
+    notif.style.display = "block";
+    notif.style.opacity = "1";
+
+    // Ocultar luego de 3 segundos
+    setTimeout(() => {
+      notif.style.opacity = "0";
+      setTimeout(() => {
+        notif.style.display = "none";
+      }, 300);
+    }, 5000);
+  }
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
