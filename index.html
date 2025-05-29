@@ -154,35 +154,39 @@
 		</section>
 
 		<!-- 8. Confirmación -->
-		<section class="Confirmacion">
-		  <h2>Confirma tu Asistencia</h2>
-		  <form
-			action="mailto:karina.ldb18@gmail.com?subject=Confirmación%20asistencia"
+			<section class="Confirmacion">
+		<h2>Confirma tu Asistencia</h2>
+		<form
+			action="https://formsubmit.co/iliana.qb.17@gmail.com"
 			method="POST"
-			enctype="text/plain"
 			accept-charset="UTF-8"
-		  >
+		>
+			<!-- Campo oculto para asunto -->
+			<input type="hidden" name="_subject" value="Confirmación asistencia">
+
 			<label for="nombre">Tu nombre</label>
 			<input
-			  type="text"
-			  id="nombre"
-			  name="nombre"
-			  placeholder="Tu nombre"
-			  required
+			type="text"
+			id="nombre"
+			name="nombre"
+			placeholder="Tu nombre"
+			required
 			/>
 
 			<label for="mensaje">Comentarios o número de acompañantes</label>
 			<textarea
-			  id="mensaje"
-			  name="mensaje"
-			  placeholder="Comentarios o número de acompañantes"
-			  required
+			id="mensaje"
+			name="mensaje"
+			placeholder="Comentarios o número de acompañantes"
+			required
 			></textarea>
+
 			<button type="submit" class="btn btn-primary">
-			  Enviar Confirmación
+			Enviar Confirmación
 			</button>
-		  </form>
+		</form>
 		</section>
+
 
 		<!-- 9. Mesa de Regalos -->
 		<section class="mesaregalos">
