@@ -101,7 +101,6 @@ body {
   font-weight: bold;
   font-family: "Montserrat";
 }
-}
 
 #btn-ingresar:hover {
   transform: scale(1.05);
@@ -130,7 +129,7 @@ body {
   align-items: center;
   z-index: 9999;
   cursor: pointer;
-  box-shadow:  0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.2);
 }
 
 /* Iconos de sonido */
@@ -208,7 +207,6 @@ button:hover {
   }
 }
 
-
 /* Encabezado */
 header.inicio {
   text-align: center;
@@ -233,7 +231,7 @@ header.inicio h1 {
 .foto img {
   max-width: 80%;
   height: auto;
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s ease;
@@ -270,7 +268,7 @@ h5 {
 p {
   color: #b98d7a;
   font-size: 1.6em;
-  margin-bottom: .65rem;
+  margin-bottom: 0.65rem;
   text-align: center;
 }
 
@@ -280,7 +278,7 @@ p {
   font-style: italic;
   text-align: justify;
   padding: 1.8rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   color: #a47764;
   line-height: 2.5rem;
 }
@@ -305,7 +303,7 @@ p {
 .cuenta-regresiva {
   display: flex;
   justify-content: center;
-  gap: .9rem;
+  gap: 0.9rem;
   font-size: 5rem;
   color: #a47764;
   flex-wrap: wrap;
@@ -313,8 +311,8 @@ p {
 
 .cuenta-regresiva div {
   background-color: #a47764;
-  padding: .9rem;
-  border-radius: .6rem;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
   min-width: 4.3rem;
   text-align: center;
   font-weight: bold;
@@ -324,7 +322,7 @@ p {
 .Nombres img {
   max-width: 80%;
   height: auto;
-  border-radius: .9rem;
+  border-radius: 0.9rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: fadeIn 1s ease;
@@ -334,16 +332,16 @@ p {
 .Confirmacion form {
   display: flex;
   flex-direction: column;
-  gap: .9rem;
+  gap: 0.9rem;
   max-width: 31.25rem;
   margin: 0 auto;
 }
 
 .Confirmacion input,
 .Confirmacion textarea {
-  padding: .75rem;
+  padding: 0.75rem;
   border: 1px solid #a47764;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1em;
 }
 
@@ -356,8 +354,8 @@ p {
   background-color: #b98d7a;
   color: white;
   border: none;
-  padding: .9rem;
-  border-radius: .5rem;
+  padding: 0.9rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-size: 1em;
   transition: background 0.3s ease;
@@ -385,7 +383,7 @@ p {
 }
 
 .mesaregalos li {
-  margin-bottom: .9rem;
+  margin-bottom: 0.9rem;
 }
 /* Hoteles */
 
@@ -486,12 +484,61 @@ h6 {
   letter-spacing: 3px;
 }
 
+@media screen and (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline::before {
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+  }
+
+  .event {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px 0;
+    text-align: left;
+    gap: 1rem;
+  }
+
+  .event img {
+    width: 3.5rem;
+    margin: 0;
+  }
+
+  .event .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .time,
+  .label {
+    text-align: left;
+  }
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 100;
+    }
+  }
+}
+
 /* Boton temas*/
 
 /* wishlist images */
 
 img.wishlist {
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   width: 50% !important;
   height: auto !important;
 }
@@ -506,7 +553,7 @@ img.wishlist {
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
   font-family: sans-serif;
   z-index: 9999;
   opacity: 0;
