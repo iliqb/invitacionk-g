@@ -103,7 +103,7 @@ function copyInfo() {
       setTimeout(() => {
         notif.style.display = "none";
       }, 300);
-    }, 5000);
+    }, 10000);
   }
 
 const observer = new IntersectionObserver(
