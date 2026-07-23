@@ -19,7 +19,7 @@ function cambiarTema(tema) {
   document.body.className = tema; // Cambiar el tema del body
 }
 // cuenta regresiva
-const fechaBoda = new Date("2025-11-01T00:00:00").getTime();
+const fechaBoda = new Date("2026-11-01T00:00:00").getTime();
 const cuenta = document.getElementById("cuenta-regresiva");
 
 setInterval(() => {
